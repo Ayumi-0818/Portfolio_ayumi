@@ -61,7 +61,6 @@ ul {
 
 .fa-instagram {
     color: #443c36;
-    margin-right: 30px;
 }
 
 .fa-pinterest {
@@ -77,18 +76,16 @@ ul {
     font-weight: 300;
     font-family: Futura, "Century Gothic";
     color: #443c36;
-    margin-left: 183px;
 }
 
 /* contactここから */
-.title h1 {
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.title p {
-    font-size: 14px;
-    margin-top: 15px;
+.main-text {
+    font-size: 16px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #443c36;
+    line-height: 2.25;
+    margin-bottom: 40px;
 }
 
 .contact {
@@ -100,27 +97,21 @@ ul {
 }
 
 .form-area {
-    background-color: #f8f8f8;
-    border: 1px solid #aaaaaa;
+    background-color: #f9c0d3;
     margin-top: 25px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .form-area dt {
-    width: 200px;
+    width: 150px;
     padding: 15px 0;
     font-size: 15px;
     font-weight: bold;
     line-height: 24px;
-}
-
-.form-area dt .required::after {
-    content: "必須";
-    font-size: 11px;
-    color: #eb4f32;
-    margin-left: 10px;
 }
 
 .form-area dd {
@@ -161,28 +152,57 @@ ul {
     line-height: 1.5;
 }
 
-.confirm-text {
-    font-size: 14px;
+.confirm-text_wrap {
+    display: flex;
+}
+
+.confirm-text_1 a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+    transform: scale(1);
+    display: block;
+}
+
+.confirm-text_1 {
+    font-size: 15px;
     line-height: 22px;
     margin-top: 30px;
+    text-decoration: underline;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #443c36;
+}
+
+.confirm-text_2 {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 30px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #443c36;
 }
 
 .submit-button {
-    background-color: #f4dd64;
+    background-color: #d43278;
     display: inline-block;
-    min-width: 180px;
-    line-height: 48px;
-    border-radius: 24px;
+    margin-left: 950px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 
-    font-size: 14px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
     border: none;
     margin-bottom: 150px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .submit-button:hover {
-    background-color: #d8b500;
+    background-color: #f9c0d3;
 }
 /* contactここまで */

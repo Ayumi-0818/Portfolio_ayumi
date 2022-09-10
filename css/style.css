@@ -33,6 +33,11 @@ ul {
 }
 
 /* headerここから */
+.header {
+    position: fixed;
+    width: 100%;
+}
+
 .header_wrap {
     background-color: #f3d6f4;
     height: 70px;
@@ -62,7 +67,6 @@ ul {
 
 .fa-instagram {
     color: #443c36;
-    margin-right: 30px;
 }
 
 .fa-pinterest {
@@ -113,6 +117,7 @@ ul {
     display: flex;
     margin-left: 605px;
     margin-top: -230px;
+    width: 100%;
 }
 
 /* homeここまで */
@@ -181,12 +186,17 @@ ul {
     margin-top: -135px;
 }
 
+.services_ruby {
+    display: inline-block;
+}
+
 .services_text_w {
     font-size: 18px;
     font-weight: bold;
     color: #a09c16;
     margin-bottom: -10px;
-    margin-left: 210px;
+    text-align: right;
+    font-family: Futura, "Century Gothic";
 }
 
 .services_title_w {
@@ -199,6 +209,8 @@ ul {
     width: 345px;
     height: 80px;
     margin-top: 10px;
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .services_text_c {
@@ -206,7 +218,9 @@ ul {
     font-weight: bold;
     color: #d43278;
     margin-bottom: -10px;
-    margin-left: 92px;
+    text-align: right;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .services_title_c {
@@ -219,6 +233,9 @@ ul {
     width: 205px;
     height: 80px;
     margin-top: 10px;
+    font-family: Futura, "Century Gothic";
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .services_text_g {
@@ -226,7 +243,9 @@ ul {
     font-weight: bold;
     color: #ff8947;
     margin-bottom: -10px;
-    margin-left: 253px;
+    text-align: right;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .services_title_g {
@@ -239,12 +258,17 @@ ul {
     width: 440px;
     height: 80px;
     margin-top: 10px;
+    font-family: Futura, "Century Gothic";
+    display: inline-block;
+    padding: 0 10px;
 }
 
 .services_text {
     font-size: 18px;
     line-height: 2;
     margin-bottom: 80px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 /* servicesここまで */
 
