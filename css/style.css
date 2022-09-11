@@ -40,8 +40,9 @@ ul {
 
 .header_wrap {
     background-color: #f3d6f4;
-    height: 70px;
+    padding-bottom: 40px;
     max-width: 100%;
+    margin: 0 auto;
     padding-top: 40px;
 }
 
@@ -61,8 +62,6 @@ ul {
 .pc_nav_1 a:hover {
     opacity: 0.7;
     transition: 0.3s;
-    transform: scale(1);
-    display: block;
 }
 
 .fa-instagram {
@@ -98,9 +97,11 @@ ul {
 /* homeここから */
 .home_wrap {
     padding-top: 150px;
-    background-color: #fcefde;
-    height: 693px;
+    padding-bottom: 50px;
     max-width: 100%;
+    margin: 0 auto;
+    background-color: #fcefde;
+    margin-top: 15px;
 }
 
 .home_title {
@@ -114,10 +115,11 @@ ul {
 }
 
 .portfolio_pic_main {
-    display: flex;
-    margin-left: 605px;
     margin-top: -230px;
     width: 100%;
+    text-align: right;
+    height: 500px;
+    overflow: hidden;
 }
 
 /* homeここまで */
@@ -126,23 +128,27 @@ ul {
 .about_background_pic {
     background: url(../images/map.jpg) no-repeat center center/cover;
     height: 890px;
-    margin-top: 80px;
+    margin-top: 150px;
     position: relative;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .about_wrap {
     padding-top: 150px;
-    height: 887px;
+    padding-bottom: 150px;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .about_content_wrap {
     display: block;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .findyourdesign_pic {
-    margin-left: 605px;
     margin-top: -100px;
 }
 
@@ -177,12 +183,13 @@ ul {
 .services_wrap {
     padding-top: 150px;
     background-color: #fcefde;
-    height: 990px;
+    padding-bottom: 70px;
     max-width: 100%;
 }
 
 .services_content_wrap {
-    margin-left: 605px;
+    max-width: 1000px;
+    margin: 0 auto;
     margin-top: -135px;
 }
 
@@ -196,7 +203,8 @@ ul {
     color: #a09c16;
     margin-bottom: -10px;
     text-align: right;
-    font-family: Futura, "Century Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .services_title_w {
@@ -206,7 +214,6 @@ ul {
     color: #fff;
     margin-bottom: 30px;
     background-color: #a09c16;
-    width: 345px;
     height: 80px;
     margin-top: 10px;
     display: inline-block;
@@ -230,7 +237,6 @@ ul {
     color: #fff;
     margin-bottom: 30px;
     background-color: #d43278;
-    width: 205px;
     height: 80px;
     margin-top: 10px;
     font-family: Futura, "Century Gothic";
@@ -255,7 +261,6 @@ ul {
     color: #fff;
     margin-bottom: 30px;
     background-color: #ff8947;
-    width: 440px;
     height: 80px;
     margin-top: 10px;
     font-family: Futura, "Century Gothic";
@@ -278,13 +283,46 @@ ul {
     display: flex;
     padding-top: 150px;
     background-color: #99c4e7;
-    height: 703px;
+    padding-bottom: 150px;
     max-width: 100%;
+}
+
+.works_pic_wrap {
+    display: block;
+    position: relative;
+}
+
+.works_pic_wrap:hover div {
+    opacity: 1;
+}
+
+.works_pic_wrap div {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.works_pic_wrap p {
+    color: #fff;
+    font-size: 32px;
+    font-style: italic;
+    font-family: Futura, "Century Gothic";
+    font-weight: 200;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .works_pic {
     display: flex;
     margin-left: 320px;
+    align-items: flex-start;
 }
 
 .coming_soon_box {
@@ -307,19 +345,16 @@ ul {
 }
 /* worksここまで */
 
-.line {
-    color: #fff;
-    border: 1px;
-}
-
 /* contactここから */
 .contact_wrap {
     box-sizing: border-box;
     display: flex;
     padding-top: 150px;
     background-color: #f9c0d3;
-    height: 544px;
+    padding-bottom: 150px;
     max-width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .contact_text {
@@ -350,4 +385,7 @@ ul {
     text-align: center;
     background-color: #f9c0d3;
     padding-bottom: 150px;
+}
+
+@media (max-width: 767px) {
 }

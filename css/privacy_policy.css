@@ -33,9 +33,16 @@ ul {
 }
 
 /* headerここから */
+.header {
+    position: fixed;
+    width: 100%;
+}
+
 .header_wrap {
+    background-color: #f3d6f4;
     height: 70px;
     max-width: 100%;
+    margin: 0 auto;
     padding-top: 40px;
 }
 
@@ -55,8 +62,6 @@ ul {
 .pc_nav_1 a:hover {
     opacity: 0.7;
     transition: 0.3s;
-    transform: scale(1);
-    display: block;
 }
 
 .fa-instagram {
@@ -70,27 +75,38 @@ ul {
 /* headerここまで */
 
 /* privacy policyここから */
+.privacy_policy_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
 .privacy_policy_title {
-    font-size: 38px;
+    margin-top: 150px;
+    font-size: 35px;
     font-weight: 300;
     font-family: Futura, "Century Gothic";
     color: #443c36;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 3px;
+    color: #443c36;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .privacy_policy_text {
-    margin-top: 60px;
-    margin-bottom: 150px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     font-weight: 500;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     color: #443c36;
     width: 1000px;
-    word-wrap: break-word;
-    width: 1000px;
-    height: 745px;
+    text-align: justify;
+    margin-bottom: 18px;
 }
 /* privacy policyここまで */

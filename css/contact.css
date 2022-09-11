@@ -32,10 +32,16 @@ ul {
     list-style: none;
 }
 
-/* headerここから */
+.header {
+    position: fixed;
+    width: 100%;
+}
+
 .header_wrap {
+    background-color: #f3d6f4;
     height: 70px;
     max-width: 100%;
+    margin: 0 auto;
     padding-top: 40px;
 }
 
@@ -55,8 +61,6 @@ ul {
 .pc_nav_1 a:hover {
     opacity: 0.7;
     transition: 0.3s;
-    transform: scale(1);
-    display: block;
 }
 
 .fa-instagram {
@@ -76,6 +80,8 @@ ul {
     font-weight: 300;
     font-family: Futura, "Century Gothic";
     color: #443c36;
+    margin-left: 183px;
+    padding-top: 150px;
 }
 
 /* contactここから */
@@ -88,10 +94,10 @@ ul {
     margin-bottom: 40px;
 }
 
-.contact {
+.contact_wrap {
     width: 930px;
     max-width: 90%;
-    margin-top: 75px;
+    margin-top: -130px;
     margin-left: auto;
     margin-right: auto;
 }
