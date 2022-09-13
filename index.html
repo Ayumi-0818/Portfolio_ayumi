@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AYUMI TAKAYAMA Portfolio</title>
     <meta name="description" content="ポートフォリオ">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/e817c8eaed.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,6 +29,16 @@
                     <li><a href="contact.html">CONTACT</a></li>
                     <li><a class="fa-brands fa-instagram fa-lg" href="https://www.instagram.com/"></a></li>
                     <li><a class="fa-brands fa-pinterest fa-lg" href="https://www.pinterest.jp/"></a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="about_me.html">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,10 +68,10 @@
     <div class="about_background_pic">
         <section class="about" id="about">
             <div class="about_wrap">
-                <h1 class="title_1">
-                    <span>ABOUT</span>
-                </h1>
                 <div class="about_content_wrap">
+                    <h1 class="title_1">
+                        <span>ABOUT</span>
+                    </h1>
                     <div class="findyourdesign_pic">
                         <picture>
                             <img src="images/findyourdesign.png" alt="arrow">
@@ -71,91 +86,102 @@
                             ご要望にお応えすることはもちろん、「新しい発見」があるデザインのご提案ができるよう努めます。
                         </p>
                         <a class="about_me" href="about_me.html">About me</a>
-                        <div class="arrow_2">
-                            <picture>
-                                <img src="images/arrow_2.png" alt="arrow">
-                            </picture>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- aboutここまで -->
+    </div>
+    </section>
+    <!-- aboutここまで -->
 
-        <!-- servicesここから -->
-        <section class="services" id="services">
-            <div class="services_wrap">
-                <h1 class="title_1">
-                    <span>SERVICES</span>
-                </h1>
-                <div class="services_content_wrap">
-                    <div class="services_ruby">
-                        <p class="services_text_w">ウェブデザイン</p>
-                        <h2 class="services_title_w">Web design</h2>
-                    </div>
-                    <p class="services_text">ヒアリングに基づいたプランに沿って、ユーザビリティを意識したデザインをご提案いたします。<br>
-                        バナーの制作もお気軽にお問い合わせください。</p>
-
-                    <div class="services_ruby">
-                        <p class="services_text_c">コーディング</p>
-                        <h2 class="services_title_c">Coding</h2>
-                    </div>
-                    <p class="services_text">デザインの意図を汲み取り、適切な動きや効果を使用したコーディングを心がけます。<br>
-                        デザインカンプを基に再現性の高い仕上がりをお約束します。</p>
-
-                    <div class="services_ruby">
-                        <p class="services_text_g">グラフィックデザイン</p>
-                        <h2 class="services_title_g">Graphic design</h2>
-                    </div>
-                    <p class="services_text">パンフレット・ポスター・リーフレット・名刺など印刷物の制作もおまかせください。<br>
-                        印刷会社のご紹介、ネットプリントへの入稿代行も承ります。</p>
+    <!-- servicesここから -->
+    <section class="services" id="services">
+        <div class="services_wrap">
+            <h1 class="title_1">
+                <span>SERVICES</span>
+            </h1>
+            <div class="services_content_wrap">
+                <div class="services_ruby">
+                    <p class="services_text_w">ウェブデザイン</p>
+                    <h2 class="services_title_w">Web design</h2>
                 </div>
+                <p class="services_text">ヒアリングに基づいたプランに沿って、ユーザビリティを意識したデザインをご提案いたします。<br>
+                    バナーの制作もお気軽にお問い合わせください。</p>
+
+                <div class="services_ruby">
+                    <p class="services_text_c">コーディング</p>
+                    <h2 class="services_title_c">Coding</h2>
+                </div>
+                <p class="services_text">デザインの意図を汲み取り、適切な動きや効果を使用したコーディングを心がけます。<br>
+                    デザインカンプを基に再現性の高い仕上がりをお約束します。</p>
+
+                <div class="services_ruby">
+                    <p class="services_text_g">グラフィックデザイン</p>
+                    <h2 class="services_title_g">Graphic design</h2>
+                </div>
+                <p class="services_text">パンフレット・ポスター・リーフレット・名刺など印刷物の制作もおまかせください。<br>
+                    印刷会社のご紹介、ネットプリントへの入稿代行も承ります。</p>
             </div>
-        </section>
-        <!-- servicesここまで -->
+        </div>
+    </section>
+    <!-- servicesここまで -->
 
-        <!-- worksここから -->
-        <section class="works" id="works">
-            <div class="works_wrap">
-                <h1 class="title_2">
-                    <span>WORKS</span>
-                </h1>
-                <div class="works_pic">
-                    <a class="works_pic_wrap" href="works.html">
-                        <picture>
-                            <img src="images/works_1.jpg" alt="works_1">
-                        </picture>
-                        <div>
-                            <p>READ MORE</p>
-                        </div>
-                    </a>
-                    <div class="coming_soon_box">
-                        <p>COMING SOON</p>
-                    </div>
-                </div>
-                <div class="arrow_pic">
+    <!-- worksここから -->
+    <section class="works" id="works">
+        <div class="works_wrap">
+            <h1 class="title_2">
+                <span>WORKS</span>
+            </h1>
+            <div class="works_pic">
+                <a class="works_pic_wrap" href="works.html">
                     <picture>
-                        <a href="works.html"><img src="images/arrow.png" alt="arrow"></a>
+                        <img src="images/works_1.jpg" alt="works_1">
                     </picture>
+                    <div>
+                        <p>READ MORE</p>
+                    </div>
+                </a>
+                <div class="coming_soon_box">
+                    <p>COMING SOON</p>
                 </div>
             </div>
-        </section>
-        <!-- worksここまで -->
+            <div class="arrow_pic">
+                <picture>
+                    <a href="works.html"><img src="images/arrow.png" alt="arrow"></a>
+                </picture>
+            </div>
+        </div>
+    </section>
+    <!-- worksここまで -->
 
-        <!-- contactここから -->
-        <section class="contact" id="contact">
-            <div class="contact_wrap">
-                <h1 class="title_2">
-                    <span>CONTACT</span>
-                </h1>
-                <p class="contact_text">お問い合わせ・ご相談お待ちしております。<br>
-                    お気軽にご連絡ください。</p>
-                <a class="contact_text_2" href="contact.html">お問い合わせフォームはこちら ▶</a>
-            </div>
-            <div class="copy"><small>&copy;2022 AYUMI TAKAYAMA All Rights Reserved.</small>
-            </div>
-        </section>
-        <!-- contactここまで -->
+    <!-- contactここから -->
+    <section class="contact" id="contact">
+        <div class="contact_wrap">
+            <h1 class="title_2">
+                <span>CONTACT</span>
+            </h1>
+            <p class="contact_text">お問い合わせ・ご相談お待ちしております。<br>
+                お気軽にご連絡ください。</p>
+            <a class="contact_text_2" href="contact.html">お問い合わせフォームはこちら ▶</a>
+        </div>
+        <div class="copy"><small>&copy;2022 AYUMI TAKAYAMA All Rights Reserved.</small>
+        </div>
+    </section>
+    <!-- contactここまで -->
+
+    <script>
+        $(function () {
+            $('.sp_btn,.sp_nav li').click(function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+
+            $('.slider_img').slick({
+                autoplay: true,
+                autoplayspeed: 1000,
+                dots: true
+            });
+        });
+    </script>
 </body>
 
 </html>

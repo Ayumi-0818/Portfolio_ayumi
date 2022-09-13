@@ -32,6 +32,12 @@ ul {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
 /* headerここから */
 .header {
     position: fixed;
@@ -81,7 +87,7 @@ ul {
     font-weight: 300;
     font-family: Futura, "Century Gothic";
     color: #443c36;
-    margin-left: 183px;
+    margin-right: 50px;
 }
 
 .title_2 {
@@ -91,17 +97,21 @@ ul {
     font-weight: 300;
     font-family: Futura, "Century Gothic";
     color: #fff;
-    margin-left: 183px;
+    margin-right: 50px;
 }
 
 /* homeここから */
+.home {
+    background-color: #fcefde;
+}
+
 .home_wrap {
     padding-top: 150px;
     padding-bottom: 50px;
     max-width: 100%;
     margin: 0 auto;
-    background-color: #fcefde;
     margin-top: 15px;
+    width: 1000px;
 }
 
 .home_title {
@@ -109,9 +119,9 @@ ul {
 }
 
 .portfolio_pic {
-    padding-left: 160px;
-    top: 200px;
+    top: 210px;
     position: absolute;
+    left: -10px;
 }
 
 .portfolio_pic_main {
@@ -122,13 +132,16 @@ ul {
     overflow: hidden;
 }
 
+.portfolio_pic_main img {
+    width: 80%;
+}
 /* homeここまで */
 
 /* aboutここから */
 .about_background_pic {
     background: url(../images/map.jpg) no-repeat center center/cover;
     height: 890px;
-    margin-top: 150px;
+    padding-top: 100px;
     position: relative;
     max-width: 100%;
     margin: 0 auto;
@@ -142,55 +155,53 @@ ul {
 }
 
 .about_content_wrap {
-    display: block;
-    flex-direction: column;
     max-width: 1000px;
     margin: 0 auto;
+    display: flex;
 }
 
 .findyourdesign_pic {
-    margin-top: -100px;
+    margin-top: -5px;
 }
 
 .about_text {
-    margin-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     font-size: 18px;
     line-height: 2.7;
     font-weight: 500;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     color: #443c36;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .about_me {
-    margin-top: 70px;
     font-size: 22px;
     color: #443c36;
     font-style: italic;
     font-weight: 300;
-    margin-left: 800px;
-}
-
-.arrow_2 {
-    position: absolute;
-    margin-right: 200px;
-    margin-left: 920px;
-    margin-top: -30px;
+    display: block;
+    text-align: right;
 }
 /* aboutここまで */
 
 /* servicesここから */
+.services {
+    background-color: #fcefde;
+}
+
 .services_wrap {
     padding-top: 150px;
-    background-color: #fcefde;
     padding-bottom: 70px;
-    max-width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .services_content_wrap {
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: -135px;
+    margin-top: -10px;
 }
 
 .services_ruby {
@@ -216,6 +227,7 @@ ul {
     background-color: #a09c16;
     height: 80px;
     margin-top: 10px;
+    font-family: Futura, "Century Gothic";
     display: inline-block;
     padding: 0 10px;
 }
@@ -278,13 +290,18 @@ ul {
 /* servicesここまで */
 
 /* worksここから */
+.works {
+    background-color: #99c4e7;
+    padding-top: 150px;
+}
+
 .works_wrap {
     box-sizing: border-box;
     display: flex;
-    padding-top: 150px;
-    background-color: #99c4e7;
     padding-bottom: 150px;
     max-width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .works_pic_wrap {
@@ -321,7 +338,6 @@ ul {
 
 .works_pic {
     display: flex;
-    margin-left: 320px;
     align-items: flex-start;
 }
 
@@ -331,7 +347,7 @@ ul {
     color: #443c36;
     background: #e6e6e6;
     width: 480px;
-    height: 340px;
+    height: 268px;
     margin-left: 80px;
     display: flex;
     flex-direction: column;
@@ -341,18 +357,22 @@ ul {
 
 .arrow_pic {
     display: block;
-    margin-top: 370px;
+    margin-top: 280px;
 }
 /* worksここまで */
 
 /* contactここから */
+.contact {
+    background-color: #f9c0d3;
+}
+
 .contact_wrap {
     box-sizing: border-box;
     display: flex;
     padding-top: 150px;
-    background-color: #f9c0d3;
     padding-bottom: 150px;
     max-width: 100%;
+    width: 1000px;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -361,7 +381,6 @@ ul {
     font-size: 20px;
     line-height: 1.75;
     color: #fff;
-    margin-left: 320px;
 }
 
 .contact_text_2 {
@@ -387,5 +406,115 @@ ul {
     padding-bottom: 150px;
 }
 
-@media (max-width: 767px) {
+/* スマホ用 */
+.sp_nav {
+    display: none;
 }
+
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .header_wrap {
+        display: none;
+    }
+
+    .sp_btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 30px;
+        z-index: 100;
+    }
+
+    .sp_btn span {
+        background: #fff;
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background: #fff;
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /* open時 */
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #fff;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* WORKSここから */
+    .works_pic {
+        display: block;
+    }
+
+    .coming_soon_box {
+        margin-left: 0;
+    }
+}
+/* WORKSここまで */
+
+/* contactここから */
+
+/* contactここまで */
