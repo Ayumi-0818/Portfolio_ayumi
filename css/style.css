@@ -365,6 +365,10 @@ img {
     background-color: #f9c0d3;
 }
 
+.contact_contents {
+    display: flex;
+}
+
 .contact_wrap {
     box-sizing: border-box;
     display: flex;
@@ -444,6 +448,7 @@ img {
     /* メインビジュアル */
     .home_wrap {
         margin-top: 0px;
+        padding-bottom: 10px;
     }
 
     .portfolio_pic_main {
@@ -459,22 +464,37 @@ img {
         height: auto;
     }
 
+    .about_text {
+        font-size: 16px;
+        line-height: 1.7;
+        width: 98%;
+        text-align: justify;
+    }
+    .about_me {
+        right: 15px;
+    }
+
     /* services */
     .services_title_w {
-        font-size: 30px;
+        font-size: 35px;
+        height: 50px;
     }
 
     .services_title_g {
         font-size: 35px;
+        height: 50px;
     }
 
     .services_title_c {
         font-size: 35px;
+        height: 50px;
     }
 
-    .about_text {
+    .services_text {
         font-size: 16px;
-        line-height: 1.5;
+        line-height: 1.7;
+        width: 98%;
+        text-align: justify;
     }
 
     /* WORKSここから */
@@ -484,7 +504,43 @@ img {
 
     .coming_soon_box {
         margin-left: 0;
+        width: 100%;
     }
+
+    .works_pic_wrap {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .works_wrap {
+        position: relative;
+    }
+
+    .arrow_pic {
+        position: absolute;
+        bottom: 100px;
+        right: 15px;
+    }
+    /* WORKSここまで */
+
+    /* CONTACTここから */
+    .contact_contents {
+        display: block;
+    }
+
+    .contact_text_2 {
+        width: auto;
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .contact_text {
+        font-size: 16px;
+        line-height: 1.7;
+        width: 98%;
+    }
+    /* CONTACTここまで */
 
     .pc_nav {
         display: none;
@@ -497,8 +553,8 @@ img {
     .sp_btn {
         display: block;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 10px;
+        top: 10px;
         height: 30px;
         z-index: 50px;
     }
@@ -506,8 +562,8 @@ img {
     .sp_btn span {
         background: #fff;
         display: block;
-        width: 33px;
-        height: 3px;
+        width: 30px;
+        height: 2px;
         position: relative;
         top: 10px;
         transition: 0.3s;
@@ -518,18 +574,18 @@ img {
         content: "";
         background: #fff;
         display: block;
-        width: 33px;
-        height: 3px;
+        width: 30px;
+        height: 2px;
         position: absolute;
         transition: 0.3s;
     }
 
     .sp_btn span::before {
-        bottom: 10px;
+        bottom: 8px;
     }
 
     .sp_btn span::after {
-        top: 10px;
+        top: 8px;
     }
 
     /* open時 */
@@ -552,7 +608,7 @@ img {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background: rgba(0, 0, 0, 0.8);
     }
 
@@ -571,4 +627,8 @@ img {
             "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
         text-align: center;
     }
+}
+
+.br_sp {
+    display: none;
 }
