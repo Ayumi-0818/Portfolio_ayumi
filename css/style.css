@@ -556,7 +556,7 @@ img {
         right: 10px;
         top: 10px;
         height: 30px;
-        z-index: 50px;
+        z-index: 50;
     }
 
     .sp_btn span {
@@ -610,6 +610,7 @@ img {
         width: 100%;
         height: 80vh;
         background: rgba(0, 0, 0, 0.8);
+        z-index: 30;
     }
 
     .sp_nav ul {
